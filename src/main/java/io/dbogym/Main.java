@@ -1,4 +1,4 @@
-// 단계 1 - 2.a
+// 단계 1 - 2.b
 package io.dbogym;
 
 import java.util.Scanner;
@@ -14,7 +14,7 @@ public class Main {
                 System.out.println("프로그램이 종료됩니다.");
                 break;
             }
-            System.out.println(s);
+            System.out.println("존재하지 않는 명령어 입니다.");
         }
     }
 }
