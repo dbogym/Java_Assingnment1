@@ -1,6 +1,9 @@
-// 단계 1 - 3
+// 단계 1 - 3 (게시글 조회)
 package io.dbogym;
 
+import io.dbogym.data.Post;
+
+import java.util.ArrayList;
 import java.util.Scanner;
 
 public class Main {
@@ -8,6 +11,7 @@ public class Main {
         Scanner sc = new Scanner(System.in);
         boolean status = true;
         int id= 0;
+        Post newPost = null;
 
         while ( status ){
             System.out.print("명령어> ");
@@ -29,9 +33,15 @@ public class Main {
                     String body = sc.nextLine().trim();
 
                     id++;
-                    Post newPost = new Post(id, title, body);
+                    newPost = new Post(id, title, body);
 
-                    System.out.println("newPost = " + newPost);
+                    break;
+
+                case "조회":
+
+                    System.out.println("제목: " + newPost.getTitle());
+                    System.out.println("내용: " + newPost.getBody());
+
                     break;
 
                 default:

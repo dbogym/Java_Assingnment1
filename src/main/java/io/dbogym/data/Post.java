@@ -1,4 +1,4 @@
-package io.dbogym;
+package io.dbogym.data;
 
 import java.time.LocalDate;
 
