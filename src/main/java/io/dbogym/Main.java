@@ -1,9 +1,8 @@
-// 단계 1 - 3 (게시글 조회)
+// 단계 1 - 3 (게시글 삭제)
 package io.dbogym;
 
 import io.dbogym.data.Post;
 
-import java.util.ArrayList;
 import java.util.Scanner;
 
 public class Main {
@@ -38,9 +37,15 @@ public class Main {
                     break;
 
                 case "조회":
-
+                    System.out.println("마지막 게시을 조회합니다.");
                     System.out.println("제목: " + newPost.getTitle());
                     System.out.println("내용: " + newPost.getBody());
+
+                    break;
+
+                case "삭제":
+                    newPost = null;
+                    System.out.println("마지막 게시글이 삭제되었습니다.");
 
                     break;
 
