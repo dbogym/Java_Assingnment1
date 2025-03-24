@@ -1,4 +1,4 @@
-// 단계 1 - 3 (게시글 삭제)
+// 단계 1 - 3 (게시글 수정)
 package io.dbogym;
 
 import io.dbogym.data.Post;
@@ -40,6 +40,22 @@ public class Main {
                     System.out.println("마지막 게시을 조회합니다.");
                     System.out.println("제목: " + newPost.getTitle());
                     System.out.println("내용: " + newPost.getBody());
+
+                    break;
+
+                case "수정":
+                    System.out.println("마지막 게시글을 수정합니다.");
+
+                    System.out.print("수정할 제목: ");
+                    String editTitle = sc.nextLine().trim();
+
+                    System.out.print("수정할 내용: ");
+                    String editBody = sc.nextLine().trim();
+
+                    newPost.setTitle(editTitle);
+                    newPost.setBody(editBody);
+
+                    System.out.println("마지막 게시글이 수정되었습니다.");
 
                     break;
 
